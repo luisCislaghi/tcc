@@ -12,7 +12,7 @@ const formatResult = (d) => {
   const tempo = dayjs.duration(d, "seconds");
   const minutos = tempo.format("m[m]");
   const segundos = tempo.format("s[s]");
-
+  return d;
   return tempo.minutes() > 0 ? minutos + " " + segundos : segundos;
 };
 
